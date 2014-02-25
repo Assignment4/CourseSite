@@ -22,6 +22,7 @@ header{float:left;}
 }
 #gradingCriteria #listStudents, #gradingCriteria #GradeCriteria{
     display:none;
+    color:white;
 } 
 #gradingCriteria ol#studentCriteria{
     display: block;
