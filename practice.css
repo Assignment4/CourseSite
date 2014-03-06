@@ -1,0 +1,224 @@
+/* ====== General Section ======= */
+/* ====== General ====== */
+
+* {
+	font-size: 14px;
+	margin:0;
+	padding:0;
+}
+
+/*a{
+    color: #03c;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+ 
+a:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+    background-image: -moz-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+    background-image: -o-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+    background-image: -ms-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+}*/
+
+
+
+
+/* ====== Student Nav Bar ======= */
+
+nav#mainMenu {
+	border-color: #FFFFF3;
+	border-width:1px;
+	border-radius: 5px;
+	background-color:#FFFFF3;
+	width: 80px;
+	margin: 10px;
+}
+
+nav#mainMenu > ol > li.menuLink {
+	display: block;
+	height: 50px;
+	width: 80px;
+	/*text-indent:-9999px;*/
+	border-style: none;
+	vertical-align: super;
+	/*z-index: 9999999;*/
+	background-repeat: no-repeat; 
+	background-origin: padding-box;
+	background-attachment: scroll;
+	background-position: center center; 
+	background-size: 70px 50px;
+	
+	/* The background sprite: */
+    position:relative;
+}
+
+nav#mainMenu li.menuLink:hover a {
+	width:auto;
+	padding:0 20px;
+	overflow:visible;
+}
+
+nav#mainMenu li.menuLink:hover {
+	text-decoration:none;
+	
+	/* CSS outer glow with the box-shadow property
+    -moz-box-shadow:0 0 5px #9ddff5;
+    -webkit-box-shadow:0 0 5px #9ddff5;
+    box-shadow:0 0 5px #9ddff5;*/
+}
+
+nav#mainMenu a{
+	/* Container properties */
+    width:0;
+    left:38px;
+    padding:0;
+    position:absolute;
+    overflow:hidden;
+    
+    /* Text properties */
+    font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:0.6px;
+    white-space:nowrap;
+    line-height:39px;
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+
+    /* Future proofing (these do not work yet): */
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+/* ==== Assignments Button Red ==== */
+li.menuLink:nth-child(1) {
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/Red.png');
+	background-position: 0 0; 
+}
+
+li.menuLink:nth-child(1):hover {
+	background-position: 0 -39px;
+}
+
+li.menuLink:nth-child(1) a {
+	background-color:#ff4040;
+    color:#a60000;
+    text-shadow:1px 1px 0 #ff7373;
+    margin-top: 10px;
+}
+
+/* ==== Calendar Button Orange ==== */
+li.menuLink:nth-child(2){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/Orange.png');
+	background-position: -38px 0;
+}
+
+li.menuLink:nth-child(2):hover {
+	background-position: -38px -39px;
+}
+
+li.menuLink:nth-child(2) a {
+	background-color:#ff9540;
+    color:#a64a00;
+    text-shadow:1px 1px 0 #ffb173;
+    margin-top: 10px;
+}
+
+/* ==== Lectures Button Yellow ==== */
+li.menuLink:nth-child(3){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/yellow.png');
+	background-position: -76px 0;
+}
+
+li.menuLink:nth-child(3):hover {
+	background-position: -76px -39px;
+}
+
+li.menuLink:nth-child(3) a {
+	background-color: #ffcf40;
+	color: #a67c00;
+	text-shadow: 1px 1px 0  #ffdc73;
+	margin-top: 10px;
+}
+
+/* ==== Resources Button Green ==== */
+li.menuLink:nth-child(4){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/dark-green.png');
+	background-position: -114px 0;
+}
+
+li.menuLink:nth-child(4):hover {
+	background-position: -114px 139px;
+}
+
+li.menuLink:nth-child(4) a {
+	background-color: #65ec3b;
+	color: #228d00;
+	text-shadow: 1px 1px 0 #89ec6a;
+	margin-top: 10px;
+}
+
+/* ==== Sick Button Blue ==== */
+li.menuLink:nth-child(5){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/blue.png');
+	background-position: -152px 0;
+}
+
+li.menuLink:nth-child(5):hover {
+	background-position: -152px -39px;
+}
+
+li.menuLink:nth-child(5) a {
+	background-color: #476bd6;
+	color: #062170;
+	text-shadow: 1px 1px 0 #6d87d6;
+	margin-top: 10px;
+}
+
+/* ==== Syllabus Button Purple ==== */
+li.menuLink:nth-child(6){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/purple.png');
+	background-position: -190px 0;
+}
+
+li.menuLink:nth-child(6):hover {
+	background-position: -190px -39px;
+}
+
+li.menuLink:nth-child(6) a {
+	background-color: #9240d5;
+	color: #3f046f;
+	text-shadow: 1px 1px 0 #a468d5;
+	margin-top: 10px;
+}
+
+/* ==== Submit Assignments Button Pink ==== */
+li.menuLink:nth-child(7){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/Pink.png');
+	background-position:  -228px 0;
+}
+
+li.menuLink:nth-child(7):hover {
+	background-position: -228px -39px;
+}
+
+li.menuLink:nth-child(7) a {
+	background-color: #e5399e;
+	color: #830046;
+	text-shadow: 1px 1px 0 #e567b1;
+	margin-top: 10px;
+}
+
+
+
+/*li {
+	font-family: helvetica, sans-serif;
+	font-size: 16px;
+	list-style: none;
+}*/
