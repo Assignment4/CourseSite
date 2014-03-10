@@ -77,10 +77,13 @@ a.url:hover {
 
 /* ========================== Header Section =============================== */
 
-#classtitle{
-	font-size: 20px;
+#classtitle {
+font-size: 14px;
+font-weight: bold;
+position: fixed;
+top: 0;
+left: 5%;
 }
-
 #toolmenu { 
 	display: none;
 }
@@ -180,11 +183,13 @@ span#studentGrade a {
 /* ========================== Student Nav Bar ============================ */
 
 nav#mainMenu {
-	border-width:1px;
-	border-radius: 5px;
-	width: 80px;
-	margin: 10px;
-        
+border-width: 1px;
+border-radius: 5px;
+width: 80px;
+margin: 0 auto;
+position: fixed;
+top: 25%;
+left: 5%;
 }
 
 nav#mainMenu > ol > li.menuLink {
@@ -374,6 +379,12 @@ li.menuLink:nth-child(7) a {
         width: 90px;
 }
 
+#adminMenu {
+position: fixed;
+right: 5%;
+top: 10%;
+}
+
 #adminMenu li a {
         font-size: small;
     /* This generators the gradient on top of the solid color */
@@ -452,15 +463,24 @@ li.menuLink:nth-child(9) a:hover, li.menuLink:nth-child(9) a:focus {
 
 /* ===================  Main Content Section  =============================== */
 #mainContent {
-	background-color: white;
-        opacity: .9;
-	/*margin: auto;*/
-	overflow:auto;
-	padding: 2em;
-	padding-bottom: 50px;  /* must be same height as the footer */
-	width: 90%;
-        padding-right: 5em;
-} 
+background-color: white;
+opacity: none;
+/* margin: auto; */
+/* margin: 0 auto; */
+overflow-x: scroll;
+overflow-y: scroll;
+padding: 1em;
+padding-bottom: 50px;
+width: auto;
+max-width: 60%;
+min-width: 25%;
+margin-right: 5%;
+position: fixed;
+top: 10%;
+left: 15%;
+height: 80%;
+padding-right: 5em;
+}
 
 #mainContent a:visited{
 	color: #ffaa11;
@@ -1108,7 +1128,8 @@ fieldset.slider input{
 }
 /* ===================  Footer Section        =============================== */
 footer {
-	background-color: #3B5998;
+    display: none;
+    background-color: #3B5998;
 	clear:both;
 	color: white;
 	height: 50px;      
