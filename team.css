@@ -1,6 +1,7 @@
 /* CSS designed by Robert M. Erickson */
 
 /* ===================  General Section  ==================================== */
+@import url('http://fonts.googleapis.com/css?family=Lato:300');
 @import url('reset.css');
 * {
 	font-size:12pt;
@@ -1149,6 +1150,8 @@ h1{
 #classtitle{
 	font-size:14px; 
 	font-weight:bold;
+        position: fixed;
+        
 }
 
 #toolmenu{
