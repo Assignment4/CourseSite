@@ -55,6 +55,23 @@ p {
 	margin: 0;
 }
 
+a.url{
+Â Â Â Â color: #03c;
+Â Â Â Â -webkit-transition: 0.5s;
+Â Â Â Â -moz-transition: 0.5s;
+Â Â Â Â -o-transition: 0.5s;
+Â Â Â Â -ms-transition: 0.5s;
+Â Â Â Â transition: 0.5s;
+}
+Â 
+a.url:hover {
+Â Â Â Â -webkit-background-clip: text;
+Â Â Â Â -webkit-text-fill-color: transparent;
+Â Â Â Â background-image: -webkit-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+Â Â Â Â background-image: -moz-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+Â Â Â Â background-image: -o-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+Â Â Â Â background-image: -ms-linear-gradient(left, #f69, #fc0, #3c3, #09f, #96f);
+}
 
 
 
@@ -1368,5 +1385,3 @@ because with max width
 		content: 'min-width: 1200px';
 	}	
 }
-
-
