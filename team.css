@@ -830,7 +830,7 @@ tr#days{
 }
 
 tr#days th.sat, tr#days th.sun {
-	width:14%;
+	width: 14%;
 }
 
 #calendar table tr#days th {
