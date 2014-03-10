@@ -13,8 +13,8 @@ html, body {height: 100%;}
 
 body {
 	width:100%;
-	background:#fff;
-	min-width:600px;
+	background-image: url('http://www.uvm.edu/~jocallag/cs142/assignment4/background.jpg');
+        background-attachment: fixed;
 	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
 }
 
@@ -51,6 +51,7 @@ h1{
 
 h2, h2 a{
 	font-size:1.5em;
+        font-family: 'Lato', sans-serif
 }
 
 h3{
@@ -208,6 +209,7 @@ ol ol li {
 /* ===================  Main Content Section  =============================== */
 #mainContent {
 	background-color: white;
+        opacity: .9;
 	/*margin: auto;*/
 	overflow:auto;
 	padding: 2em;
@@ -926,8 +928,11 @@ body{
 
 h1{
 	font-size: 1.5em; /* 24px / 16px */
-	font-style: italic;
 	font-weight: normal;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-variant: small-caps;
+      
 }
 
 
