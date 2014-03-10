@@ -163,6 +163,7 @@ nav#mainMenu {
 	border-radius: 5px;
 	width: 80px;
 	margin: 10px;
+        
 }
 
 nav#mainMenu > ol > li.menuLink {
@@ -1150,7 +1151,6 @@ h1{
 #classtitle{
 	font-size:14px; 
 	font-weight:bold;
-        position: fixed;
         
 }
 
