@@ -101,6 +101,10 @@ aside#studentInfo >span#studentGrade {
     position:relative;
 }
 
+#studentGrade {
+    font-size: 0px;
+}
+
 aside#studentInfo span#studentGrade:hover a {
 	width:auto;
 	padding:0 20px;
@@ -150,9 +154,9 @@ span#studentGrade:hover {
 }
 
 span#studentGrade a {
-	background-color:#ff4040;
-    color:#a60000;
-    text-shadow:1px 1px 0 #ff7373;
+	background-color:#595959;
+    color:#212121;
+    text-shadow:1px 1px 0 #a1a1a1;
     margin-top: 10px;
 }
 
