@@ -1,6 +1,8 @@
 /* CSS designed by Robert M. Erickson */
 
 /* ===================  General Section  ==================================== */
+@import url('http://fonts.googleapis.com/css?family=Lato:300');
+
 @import url('reset.css');
 * {
 	font-size:12pt;
