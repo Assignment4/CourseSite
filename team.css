@@ -31,6 +31,9 @@ h1, h2, h3 {
 	margin:.8em 0 .2em 0;
   padding:0;
 }
+#mainContent > h1 {
+margin: 0;
+}
 
 h1{
 	font-size:2em;
@@ -78,11 +81,11 @@ a.url:hover {
 /* ========================== Header Section =============================== */
 
 #classtitle {
-font-size: 14px;
+font-size: 22px;
 font-weight: bold;
 position: fixed;
 top: 0;
-left: 5%;
+left: 2%;
 }
 #toolmenu { 
 	display: none;
@@ -90,10 +93,23 @@ left: 5%;
 
 /* ====== Student Info ====== */
 #studentName {
-	display: none;
+/* display: none; */
+position: fixed;
+top: 12%;
+left: 2%;
+font-size: 18px;
+font-family: Lato, Helvetica, sans-serif;
+font-weight: bold;
 }
 #classRank {
-	display: none;
+/* display: none; */
+position: fixed;
+/* float: right; */
+top: 12%;
+left: 64%;
+font-size: 18px;
+font-family: Lato, Helvetica, sans-serif;
+font-weight: bold;
 }
 
 aside#studentInfo {
@@ -104,28 +120,36 @@ aside#studentInfo {
 }
 
 aside#studentInfo >span#studentGrade {
-	display: block;
+	/*display: block;
 	height: 50px;
 	width: 80px;
-	/*text-indent:-9999px;*/
+	
 	border-style: none;
 	vertical-align: super;
-	/*z-index: 9999999;*/
+	z-index: 9999999;
 	background-repeat: no-repeat; 
 	background-origin: padding-box;
 	background-attachment: scroll;
 	background-position: center center; 
-	background-size: 70px 50px;
+	background-size: 70px 50px;*/
 	
 	/* The background sprite: */
-    position:relative;
+    position:fixed;
+    top: 12%;
+    z-index: 15;
+    left: 35%;
+    font-size: 18px;
+    font-family: Lato, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
-#studentGrade {
+
+/*#studentGrade {
     font-size: 0px;
 }
+*/
 
-aside#studentInfo span#studentGrade:hover a {
+/**aside#studentInfo span#studentGrade:hover a {
 	width:auto;
 	padding:0 20px;
 	overflow:visible;
@@ -133,22 +157,22 @@ aside#studentInfo span#studentGrade:hover a {
 
 aside#studentInfo span#studentGrade:hover {
 	text-decoration:none;
+
 	
-	/* CSS outer glow with the box-shadow property
+	
     -moz-box-shadow:0 0 5px #9ddff5;
     -webkit-box-shadow:0 0 5px #9ddff5;
-    box-shadow:0 0 5px #9ddff5;*/
-}
+    box-shadow:0 0 5px #9ddff5;
+}*/
 
-aside#studentInfo a {
-	/* Container properties */
+/*aside#studentInfo a {
     width:0;
     left:38px;
     padding:0;
     position:absolute;
     overflow:hidden;
     
-    /* Text properties */
+    
     font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
     font-size:18px;
     font-weight:bold;
@@ -156,15 +180,15 @@ aside#studentInfo a {
     white-space:nowrap;
     line-height:39px;
 
-    /* CSS3 Transition: */
+    
     -webkit-transition: 0.25s;
 
-    /* Future proofing (these do not work yet): */
+    
     -moz-transition: 0.25s;
     transition: 0.25s;
-}
+}*/
 
-span#studentGrade {
+/*span#studentGrade {
 	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/black.png');
 	background-position: 0 0; 
 }
@@ -186,12 +210,14 @@ nav#mainMenu {
 border-width: 1px;
 border-radius: 5px;
 width: 80px;
+height: 80%;
 margin: 0 auto;
 position: fixed;
-top: 25%;
-left: 5%;
+top: 20%;
+left: 2%;
+z-index: 15;
+/* overflow-x: scroll; */
 }
-
 nav#mainMenu > ol > li.menuLink {
 	display: block;
 	height: 50px;
@@ -381,10 +407,9 @@ li.menuLink:nth-child(7) a {
 
 #adminMenu {
 position: fixed;
-right: 5%;
-top: 10%;
+right: 2%;
+top: 20%;
 }
-
 #adminMenu li a {
         font-size: small;
     /* This generators the gradient on top of the solid color */
@@ -463,8 +488,12 @@ li.menuLink:nth-child(9) a:hover, li.menuLink:nth-child(9) a:focus {
 
 /* ===================  Main Content Section  =============================== */
 #mainContent {
-background-color: white;
-opacity: none;
+background-image: url(http://uvm.edu/~bmcomber/cs142/assignment4/wood.jpg);
+background-attachment: fixed;
+border-bottom-right-radius: 15%;
+border-bottom-left-radius: 15%;
+border-top-right-radius: 15%;
+/* opacity: .3; */
 /* margin: auto; */
 /* margin: 0 auto; */
 overflow-x: scroll;
@@ -474,12 +503,13 @@ padding-bottom: 50px;
 width: auto;
 max-width: 60%;
 min-width: 25%;
-margin-right: 5%;
+/* margin-right: 5%; */
 position: fixed;
-top: 10%;
+top: 20%;
 left: 15%;
-height: 80%;
-padding-right: 5em;
+height: 55%;
+padding-right: 2em;
+padding-left: 2em;
 }
 
 #mainContent a:visited{
@@ -1128,19 +1158,21 @@ fieldset.slider input{
 }
 /* ===================  Footer Section        =============================== */
 footer {
-    display: none;
-    background-color: #3B5998;
-	clear:both;
-	color: white;
-	height: 50px;      
-	left: 0;
-	margin-top: -50px; /* normally the negative value of footer height  */
-	position: relative;
-	top: 0;
-} 
+/* display: none; */
+background-color: #3B5998;
+clear: both;
+color: white;
+height: 40px;
+left: 0;
+/* margin-top: -50px; */
+position: fixed;
+bottom: 0;
+left: 15%;
+z-index: 0;
+}
 
 footer p{
-	padding: 1em;
+	padding: .5em;
 }
 
 /* -------  i put this here so you can have your name show up  -------------- */
@@ -1217,11 +1249,11 @@ h1{
 	background-color:#6D86B7;
 }
 
-#classtitle{
+/*#classtitle{
 	font-size:14px; 
 	font-weight:bold;
         
-}
+}*/
 
 #toolmenu{
 	float:right;
@@ -1294,7 +1326,7 @@ because with max width
 
 @media screen and (max-width: 480px){
 	body{
-		background-color: black;
+		background-color: white;
 		color: #2C2C2C;
 		font: normal 100% Cambria, Georgia, serif;
 		width: 480px;
@@ -1314,7 +1346,7 @@ because with max width
 
 @media screen and (max-width: 520px){
 	body{
-		background-color: grey;
+		background-color: white;
 		color: #2C2C2C;
 		font: normal 100% Cambria, Georgia, serif;
 		width: 520px;
@@ -1332,7 +1364,7 @@ because with max width
 
 @media screen and (max-width: 768px){
 	body{
-		background-color: red;
+		background-color: white;
 		color: #2C2C2C;
 		font: normal 100% Cambria, Georgia, serif;
 		width: 750px;
@@ -1396,7 +1428,7 @@ because with max width
 /*************************************************/
 @media screen and (min-width: 1200px){
 	body{
-		background-color: green;
+		background-color: white;
 		color: #2C2C2C;
 		font: normal 100% Cambria, Georgia, serif;
 		width: 1200px;
