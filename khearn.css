@@ -1,11 +1,14 @@
 /* CSS designed by Robert M. Erickson */
 
 /* ===================  General Section  ==================================== */
+@import url('http://fonts.googleapis.com/css?family=Lato:300');
 @import url('reset.css');
 * {
 	font-size:12pt;
+        margin: 0;
+        padding: 0;
         /*this makes the cursor a paintbrush*/
-        cursor: url('data:image/x-icon;base64,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'), auto;
+        cursor: url('data:image/x-icon;base64,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'), auto;
 }
 
 
@@ -13,26 +16,9 @@ html, body {height: 100%;}
 
 body {
 	width:100%;
-	background:#fff;
-	min-width:600px;
+	background-image: url('http://www.uvm.edu/~jocallag/cs142/assignment4/background.jpg');
+        background-attachment: fixed;
 	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
-}
-
-a{
-	border-width: .1em;
-}
-a:link{
-	color: navy;
-	border-style: solid;
-	border-color: transparent;
-}
-a:visited{
-	color: #fff;
-}
-a:hover {
-	border-style: solid;
-	border-color: navy;
-	background: #D8DFEA;
 }
 
 code{
@@ -51,10 +37,12 @@ h1{
 
 h2, h2 a{
 	font-size:1.5em;
+        font-family: 'Lato', sans-serif
 }
 
 h3{
 	font-size:1.5em;
+        font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -65,149 +53,390 @@ p {
 	padding: .4em 0 .8em 0;;
 	margin: 0;
 }
-ol li {
-	padding-bottom: 1em;
-
-}
-ol ol li {
-	padding-bottom: 1em;
-
-}
 
 
-/* ===================  Header  Section  ==================================== */
-#header {
-	background-color: #3B5998;
-	border-bottom:1px solid #000;
-	color: #fff;
-	padding:10px;
-}
 
-#header a:link{
-	color: #fff;
-}
 
-#header a:hover{
-	background-color:#6D86B7;
-}
+
+
+/* ========================== Header Section =============================== */
 
 #classtitle{
-	font-size:14px; 
-	font-weight:bold;
+	font-size: 20px;
+}
+#toolmenu { 
+	display: none;
 }
 
-.todaysdate{
-	float:right;
+/* ====== Student Info ====== */
+#studentName {
+	display: none;
+}
+#classRank {
+	display: none;
 }
 
-#toolmenu{
-	float:right;
+aside#studentInfo {
+	border-width:1px;
+	border-radius: 5px;
+	width: 80px;
+	margin: 10px
 }
 
-/* ===================  Student Info Section  =============================== */
-#studentInfo{
-	border: thick dashed #3B5998;
-	color:black;
-	float: left;
-	margin: 1em;
-	padding: .7em;
-	width: 16%;
+aside#studentInfo >span#studentGrade {
+	display: block;
+	height: 50px;
+	width: 80px;
+	/*text-indent:-9999px;*/
+	border-style: none;
+	vertical-align: super;
+	/*z-index: 9999999;*/
+	background-repeat: no-repeat; 
+	background-origin: padding-box;
+	background-attachment: scroll;
+	background-position: center center; 
+	background-size: 70px 50px;
+	
+	/* The background sprite: */
+    position:relative;
 }
 
-#studentGrade{
-	display:block;
-}	
-
-#studentGrade a:visited{
-	color: navy;
-}	
-
-#classRank{
-	display:block;
+#studentGrade {
+    font-size: 0px;
 }
 
-.noticeMe{ /* -------    for guests who are not registered , not accpeted submission */ 
-	font-weight: bold;
-	font-size: 16pt;
-	color: #ff0000;
-	background: #ff3;	
+aside#studentInfo span#studentGrade:hover a {
+	width:auto;
+	padding:0 20px;
+	overflow:visible;
 }
 
-/* ===================  Main Navigation Section  ============================ */
-#mainMenu{
-	border-bottom: thin solid #3B5998;
-	float: left;
-	font-size: 10pt;
-	margin-top: 1.5em;
-	min-width: 50em;
-	padding-bottom: 1.3em;
+aside#studentInfo span#studentGrade:hover {
+	text-decoration:none;
+	
+	/* CSS outer glow with the box-shadow property
+    -moz-box-shadow:0 0 5px #9ddff5;
+    -webkit-box-shadow:0 0 5px #9ddff5;
+    box-shadow:0 0 5px #9ddff5;*/
 }
 
-#mainMenu ul{
+aside#studentInfo a {
+	/* Container properties */
+    width:0;
+    left:38px;
+    padding:0;
+    position:absolute;
+    overflow:hidden;
+    
+    /* Text properties */
+    font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:0.6px;
+    white-space:nowrap;
+    line-height:39px;
 
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+
+    /* Future proofing (these do not work yet): */
+    -moz-transition: 0.25s;
+    transition: 0.25s;
 }
 
-#mainMenu .activeLink a, #adminMenu .activeLink a{
-	color: #000;	
-	background-color: #fff;
-	border-bottom: thick solid white;
+span#studentGrade {
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/black.png');
+	background-position: 0 0; 
 }
 
-#mainMenu a, #adminMenu a{
+span#studentGrade:hover {
+	background-position: 0 -39px;
+}
+
+span#studentGrade a {
+	background-color:#595959;
+    color:#212121;
+    text-shadow:1px 1px 0 #a1a1a1;
+    margin-top: 10px;
+}
+
+/* ========================== Student Nav Bar ============================ */
+
+nav#mainMenu {
+	border-width:1px;
+	border-radius: 5px;
+	width: 80px;
+	margin: 10px;
+        
+}
+
+nav#mainMenu > ol > li.menuLink {
+	display: block;
+	height: 50px;
+	width: 80px;
+	/*text-indent:-9999px;*/
+	border-style: none;
+	vertical-align: super;
+	/*z-index: 9999999;*/
+	background-repeat: no-repeat; 
+	background-origin: padding-box;
+	background-attachment: scroll;
+	background-position: center center; 
+	background-size: 70px 50px;
+	
+	/* The background sprite: */
+        position:relative;
+}
+
+nav#mainMenu li.menuLink:hover a {
+	width:auto;
+	padding:0 20px;
+	overflow:visible;
+}
+
+nav#mainMenu li.menuLink:hover {
+	text-decoration:none;
+	
+	/* CSS outer glow with the box-shadow property
+    -moz-box-shadow:0 0 5px #9ddff5;
+    -webkit-box-shadow:0 0 5px #9ddff5;
+    box-shadow:0 0 5px #9ddff5;*/
+}
+
+nav#mainMenu a{
+	/* Container properties */
+    width:0;
+    left:38px;
+    padding:0;
+    position:absolute;
+    overflow:hidden;
+    
+    /* Text properties */
+    font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+    font-size:18px;
+    font-weight:bold;
+    letter-spacing:0.6px;
+    white-space:nowrap;
+    line-height:39px;
+
+    /* CSS3 Transition: */
+    -webkit-transition: 0.25s;
+
+    /* Future proofing (these do not work yet): */
+    -moz-transition: 0.25s;
+    transition: 0.25s;
+}
+
+/* ==== Assignments Button Red ==== */
+li.menuLink:nth-child(1) {
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/Red.png');
+	background-position: 0 0; 
+}
+
+li.menuLink:nth-child(1):hover {
+	background-position: 0 -39px;
+}
+
+li.menuLink:nth-child(1) a {
+	background-color:#ff4040;
+    color:#a60000;
+    text-shadow:1px 1px 0 #ff7373;
+    margin-top: 10px;
+}
+
+/* ==== Calendar Button Orange ==== */
+li.menuLink:nth-child(2){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/Orange.png');
+	background-position: -38px 0;
+}
+
+li.menuLink:nth-child(2):hover {
+	background-position: -38px -39px;
+}
+
+li.menuLink:nth-child(2) a {
+	background-color:#ff9540;
+    color:#a64a00;
+    text-shadow:1px 1px 0 #ffb173;
+    margin-top: 10px;
+}
+
+/* ==== Lectures Button Yellow ==== */
+li.menuLink:nth-child(3){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/yellow.png');
+	background-position: -76px 0;
+}
+
+li.menuLink:nth-child(3):hover {
+	background-position: -76px -39px;
+}
+
+li.menuLink:nth-child(3) a {
+	background-color: #ffcf40;
+	color: #a67c00;
+	text-shadow: 1px 1px 0  #ffdc73;
+	margin-top: 10px;
+}
+
+/* ==== Resources Button Green ==== */
+li.menuLink:nth-child(4){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/dark-green.png');
+	background-position: -114px 0;
+}
+
+li.menuLink:nth-child(4):hover {
+	background-position: -114px 139px;
+}
+
+li.menuLink:nth-child(4) a {
+	background-color: #65ec3b;
+	color: #228d00;
+	text-shadow: 1px 1px 0 #89ec6a;
+	margin-top: 10px;
+}
+
+/* ==== Sick Button Blue ==== */
+li.menuLink:nth-child(5){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/blue.png');
+	background-position: -152px 0;
+}
+
+li.menuLink:nth-child(5):hover {
+	background-position: -152px -39px;
+}
+
+li.menuLink:nth-child(5) a {
+	background-color: #476bd6;
+	color: #062170;
+	text-shadow: 1px 1px 0 #6d87d6;
+	margin-top: 10px;
+}
+
+/* ==== Syllabus Button Purple ==== */
+li.menuLink:nth-child(6){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/purple.png');
+	background-position: -190px 0;
+}
+
+li.menuLink:nth-child(6):hover {
+	background-position: -190px -39px;
+}
+
+li.menuLink:nth-child(6) a {
+	background-color: #9240d5;
+	color: #3f046f;
+	text-shadow: 1px 1px 0 #a468d5;
+	margin-top: 10px;
+}
+
+/* ==== Submit Assignments Button Pink ==== */
+li.menuLink:nth-child(7){
+	background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/Pink.png');
+	background-position:  -228px 0;
+}
+
+li.menuLink:nth-child(7):hover {
+	background-position: -228px -39px;
+}
+
+li.menuLink:nth-child(7) a {
+	background-color: #e5399e;
+	color: #830046;
+	text-shadow: 1px 1px 0 #e567b1;
+	margin-top: 10px;
+}
+
+
+
+/* ====================== Admin Nav Bar ========================== */
+
+#adminMenu li {
+	display: block;
+	list-style:none;
+	margin: 0 5px;
+        width: 90px;
+}
+
+#adminMenu li a {
+        font-size: small;
+    /* This generators the gradient on top of the solid color */
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(255,255,255,.5)),
+		color-stop(1, rgba(0,0,0,.1))
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		rgba(255,255,255,.5) 0%,
+		rgba(0,0,0,.1) 100%
+	);
+	color: #f4f4f4; /* IE */
+	color: rgba(255, 255, 255, 0.8);
+	display: block;	
+	outline:none;
+	padding: 5px 5px;
 	text-decoration: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px; 
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65);
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65);
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65);
 }
 
-.menuLink{
-	display: inline;
-}
-.menuLink a{	
-	border-left: thin solid gray;
-	border-top: thin solid gray;
-	border-top-left-radius: 8px;
-	border-top-right-radius: 8px;
-}
-
-.menuLink a:link{
-	background-color: #D8DFEA;
-	border-left: thin solid #3B5998;
-	border-top: thin solid #3B5998;
-	border-right: thin solid #3B5998;
-	color: navy;
-	padding: 1em;
-}
-
-.menuLink a:visited{
-	background-color: #D8DFEA;
-	border-left: thin solid #3B5998;
-	border-top: thin solid #3B5998;
-	border-right: thin solid #3B5998;
-	color: navy;
-	padding: 1em;
-}
-.menuLink a:hover{
-	background-color: #3B5998;
-	border-left: thin solid green;
-	border-top: thin solid green;
-	border-right: thin solid green;
-	color: white;
-	padding: 1em;	
+#adminMenu li a:hover {
+    background-image: -webkit-gradient(
+                linear,
+                left bottom,
+                left top,
+        	color-stop(0,rgba(255,255,255,.5)),
+                color-stop(.1,rgba(255,255,255,.2)),
+                color-stop(.85, rgba(0,0,0,.2)),
+                color-stop(100, rgba(0,0,0,.4)));
+    
+    background-image: -moz-linear-gradient(
+                center bottom,
+                rgba(255,255,255,.5) 0%,
+                rgba(255,255,255,.2) 10%,
+                rgba(0,0,0,.2) 85%,
+                rgba(0,0,0,.4) 100%);
 }
 
-/* ------------------  admin menu  ------------------------------------------ */
-#adminMenu{
-	border-bottom: thin solid #3B5998;
-	float:left;
-	font-size: 10pt;
-	margin-top: 1em;
-	margin-left: 0;
-	min-width: 55em;
-	padding-bottom: 1.3em;
+/* ======= Class List Button ======= */
+/* ======= Grading Criteria Button ======= */
+/* ======= Enter Grades Button ======= */
+/* ======= Class Report Button ======= */
+/* ======= Group Report Button ======= */
+/* ======= Peer Grading Report Button ======= */
+/* ======= Peer Grading Button ======= */
+li.menuLink:nth-child(8) a {
+    background-color: #006561;
+    margin-top: 10px;
 }
+
+li.menuLink:nth-child(8) a:hover, li.menuLink:nth-child(9) a:focus {
+    background-color: #006561;
+}
+
+/* ======= Summary Button ======= */
+li.menuLink:nth-child(9) a {
+    background-color: #a64800;
+    margin-top: 10px;
+}
+
+li.menuLink:nth-child(9) a:hover, li.menuLink:nth-child(9) a:focus {
+    background-color: #a64800;
+}
+
 
 
 /* ===================  Main Content Section  =============================== */
 #mainContent {
 	background-color: white;
+        opacity: .9;
 	/*margin: auto;*/
 	overflow:auto;
 	padding: 2em;
@@ -862,12 +1091,18 @@ fieldset.slider input{
 }
 /* ===================  Footer Section        =============================== */
 footer {
+    display: none;
+}
+
+/*
+footer {
+
 	background-color: #3B5998;
 	clear:both;
 	color: white;
 	height: 50px;      
 	left: 0;
-	margin-top: -50px; /* normally the negative value of footer height  */
+	margin-top: -50px; 
 	position: relative;
 	top: 0;
 } 
@@ -876,7 +1111,6 @@ footer p{
 	padding: 1em;
 }
 
-/* -------  i put this here so you can have your name show up  -------------- */
 footer #author:after{
 	content:"Robert Erickson"; 
 }
@@ -884,6 +1118,7 @@ footer #author:after{
 #ProcessingTime{
 	float: right;
 }
+*/
 
 /* ===================  Non validating Section  ============================= */
 pre { 
@@ -926,8 +1161,11 @@ body{
 
 h1{
 	font-size: 1.5em; /* 24px / 16px */
-	font-style: italic;
 	font-weight: normal;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-variant: small-caps;
+      
 }
 
 
@@ -950,6 +1188,7 @@ h1{
 #classtitle{
 	font-size:14px; 
 	font-weight:bold;
+        
 }
 
 #toolmenu{
@@ -1135,3 +1374,5 @@ because with max width
 		content: 'min-width: 1200px';
 	}	
 }
+
+
