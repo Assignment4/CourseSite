@@ -1159,9 +1159,12 @@ fieldset.slider input{
 /* ===================  Footer Section        =============================== */
 footer {
 /* display: none; */
-background-color: #3B5998;
+background-color: lightskyblue;
+background-image: url('http://www.uvm.edu/~khearn/Practice/Practice/blue.png');
+background-position: -152px 0;
+background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(255,255,255,.5)), color-stop(1, rgba(0,0,0,.1)) );
+background-image: -moz-linear-gradient( center top, rgba(255,255,255,.5) 0%, rgba(0,0,0,.1) 100% );
 clear: both;
-color: white;
 height: 40px;
 left: 0;
 /* margin-top: -50px; */
