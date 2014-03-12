@@ -18,7 +18,7 @@ body {
 	width:100%;
 	background-image: url('http://www.uvm.edu/~jocallag/cs142/assignment4/background.jpg');
         background-attachment: fixed;
-	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-family:"bakersville","gerogia","Palatino";
 }
 
 
@@ -66,7 +66,7 @@ a.url{
     -ms-transition: 0.5s;
     transition: 0.5s;
 }
-Â 
+
 a.url:hover {
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -513,7 +513,7 @@ padding-left: 2em;
 }
 
 #mainContent a:visited{
-	color: #ffaa11;
+	color: darkmagenta;
 }
 
 
@@ -739,6 +739,7 @@ div.menu ul.menu li.menuAdmin{
 
 .title{
 	padding: .5em;
+        border-bottom: 1px solid beige;
 }
 
 .LecturesLink{ /* also used on calendar */  
@@ -784,6 +785,13 @@ div.menu ul.menu li.menuAdmin{
 	list-style-type: none;
 }
 
+/* ===================  Lecture Notes  =============================== */
+
+article#slide ol li{
+    padding:.5em;
+    list-style: none;
+}
+
 
 
 
@@ -793,6 +801,10 @@ div.menu ul.menu li.menuAdmin{
 	color: #ffbfbf !important;
 	background: #aa0011 !important;
 	text-align: center;	
+         border-radius: 4px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -webkit-box-shadow: 1px 1px 2px rgba (0,0,0,.65);
 }
 
 .assignment{
@@ -816,6 +828,12 @@ div.date{
 	margin:0;  
 	background: #F3F3F3; 
 	width: 2em;
+        color: rgba(255,255,255,.5);
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -webkit-box-shadow: 1px 1px 2px rgba (0,0,0,.65);
+        
 }
 
 .Excused{
@@ -827,24 +845,40 @@ div.date{
 .labComplete{
 	color: #24B300 !important;
 	background: #ffcfcf !important;
-	text-align: center;	
+	text-align: center;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -webkit-box-shadow: 1px 1px 2px rgba (0,0,0,.65);
 }
 .Late{
 	color: #24B300 !important;
 	background: #ddffdf !important;
-	text-align: center;	
+	text-align: center;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -webkit-box-shadow: 1px 1px 2px rgba (0,0,0,.65);
 }
 
 .Personal{
 	color: #aa0011 !important;
 	background: #ffcfcf !important;
-	text-align: center;	
+	text-align: center;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -webkit-box-shadow: 1px 1px 2px rgba (0,0,0,.65);
 }
 
 .Present{
 	color: #24B300 !important;
 	background: #CCFFBF !important;
 	text-align: center;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -webkit-box-shadow: 1px 1px 2px rgba (0,0,0,.65);
 }
 
 .presentation{
@@ -853,7 +887,11 @@ div.date{
 .Sick{
 	color: #aa0011 !important;
 	background: #ffadad !important;
-	text-align: center;	
+	text-align: center;
+        border-radius: 4px;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.65);
+        -webkit-box-shadow: 1px 1px 2px rgba (0,0,0,.65);
 }
 
 .submitted{
@@ -915,6 +953,16 @@ tr#days th.sat, tr#days th.sun {
 	font-weight: bold;
 	display: block; 
 }
+/* hover effects for calendar links*/
+
+#calendar table a:hover{
+    text-decoration: underline;
+    text-shadow: 2px 2px #4444CC;
+}
+
+div.event.vevent.INFO:hover{
+        text-decoration: none;
+}
 
 td.Sat div.date, td.Sun div.date{
 	border-width: 0;
@@ -961,7 +1009,7 @@ td.Jun div.date, td.Aug div.date{
 }
 
 .emailText{
-	color: #adadad;
+	color: blue;
 }
 .highlightRed{ 
 	background-color: #cc0033;
@@ -969,8 +1017,18 @@ td.Jun div.date, td.Aug div.date{
 }
 
 #syllabus table, #syllabus table td, #syllabus table th{
-	border: 1px solid gray; 
+	border: 1px solid gray;
+        border-style: dashed;
 	padding: 3px; 
+}
+
+#syllabus table tr th{
+    color: white;
+    background-color: lightsteelblue;
+}
+
+#syllabus table tr:hover{
+    background-color: beige;
 }
 
 /* ===================  Main Content Section  =============================== */
