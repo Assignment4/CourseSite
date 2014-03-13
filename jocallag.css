@@ -65,6 +65,7 @@ a.url{
     -o-transition: 0.5s;
     -ms-transition: 0.5s;
     transition: 0.5s;
+    text-decoration: none;
 }
 
 a.url:hover {
@@ -591,7 +592,7 @@ table#grading, table#grading td, table#grading th{
 .standard {
    padding: 5px;
    margin: 5px;
-   background: #000;
+   background: #e5d0b5;
    color: #fff;
    border: 2px dashed #fff;
    border-radius: 10px;
@@ -816,6 +817,27 @@ article#slide ol li{
 
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Calendar page         ------------------------------- */
+table.vcalendar{
+        background-image: url('https://www.uvm.edu/~jocallag/cs142/assignment4/paint.png');
+        background-attachment: fixed;
+        font-family: arial narrow;
+        font-weight: bold;
+        background-color: white;
+       
+}
+
+
+tr#attendanceRow{
+    background-color: white;
+}
+
+tr#monthTitle{
+    background-image: none;
+    font-variant: small-caps;
+    font-size: larger;
+    background-color: white;
+}
+
 .Absent{
 	color: #ffbfbf !important;
 	background: #aa0011 !important;
@@ -847,7 +869,6 @@ div.date{
 	margin:0;  
 	background: #F3F3F3; 
 	width: 2em;
-        color: rgba(255,255,255,.5);
         border-radius: 4px;
         box-shadow: 1px 1px 2px rgba(0,0,0,.65);
         -moz-box-shadow: 1px 1px 2px rgba(0,0,0,.65);
@@ -933,23 +954,23 @@ div.date{
 }
 	
 tr#days{
-	width:18%;
+	width:20%;
 }
 
 tr#days th.sat, tr#days th.sun {
-	width: 14%;
+	width: 9%;
 }
 
 #calendar table tr#days th {
-	color: #CCE;
-	background-color: #224;
+	color: gainsboro;
+	background-color: gray;
 	font-weight: bold;
 	text-align: center;
 	padding: 1px 0.33em;
 }
 
 #calendar table tr#title th {
-	background-color: #AAC; 
+	background-color: #AAC;
 	color: black;
 	border: 1px solid #242;
 	font-size: 120%;
@@ -957,10 +978,11 @@ tr#days th.sat, tr#days th.sun {
 	 
 #calendar table td {
 	vertical-align:top;
-	padding:3px; 
-	border: 0px solid gray; 
+	padding:5px; 
 	border-width: 0 0 1px 1px;
 	width:14%;
+        border: 1px solid black;
+        
 }
 	 
 #calendar table td.Sat {
@@ -972,21 +994,10 @@ tr#days th.sat, tr#days th.sun {
 	font-weight: bold;
 	display: block; 
 }
-/* hover effects for calendar links*/
 
-#calendar table a:hover{
-    text-decoration: underline;
-    text-shadow: 2px 2px #4444CC;
-}
-
-div.event.vevent.INFO:hover{
-        text-decoration: none;
-}
 
 td.Sat div.date, td.Sun div.date{
 	border-width: 0;
-	color: gray; 
-	background: transparent;
 }
 
 td.Jun div.date, td.Aug div.date{
@@ -997,11 +1008,13 @@ td.Jun div.date, td.Aug div.date{
 
 #calendar table td.Sat, #calendar table td.Sun {
 	background: #ddd;
+        opacity: .85;
 }
 	
 #calendar table td.lastMonth, #calendar table td.nextMonth, #calendar table td.prevMonth {
    background: #AAB; 
 	 color: #889;
+         opacity: .85;
 }
 	 
 #calendar table tr#lastweek td {
@@ -1009,15 +1022,30 @@ td.Jun div.date, td.Aug div.date{
 }
 	
 #calendar table td.atoday {
-	color: #C33;
+	color: white;
 	font-weight: bold; 
-	background: #FF6; 
+	background: black; 
 	border: 1px solid black;
 }
 
+td.atoday div.date{
+    color:black;
+}
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Call in sick Page     ------------------------------- */
+fieldset.radio{
+       color: black;  
+    font-size: 18px;  
+    text-align: center;  
+    line-height: 18px;
+    padding:.3em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
 
+fieldset.given{
+    text-align: center;
+}
 
 /* ===================  Main Content Section  =============================== */
 /* -------------------  Syllabus Page         ------------------------------- */
@@ -1042,11 +1070,20 @@ td.Jun div.date, td.Aug div.date{
 }
 
 #syllabus table tr th{
-    color: white;
-    background-color: lightsteelblue;
+background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgba(255,255,255,.5)), color-stop(1, rgba(0,0,0,.1)) );
+background-image: -moz-linear-gradient( center top, rgba(255,255,255,.5) 0%, rgba(0,0,0,.1) 100% );
+color:black;
 }
 
-#syllabus table tr:hover{
+#syllabus table tr:nth-child(3):hover{
+    background-color: beige;
+}
+
+#syllabus table tr:nth-child(6):hover{
+    background-color: beige;
+}
+
+#syllabus table tr:nth-child(7):hover{
     background-color: beige;
 }
 
