@@ -612,7 +612,7 @@ table#grading, table#grading td, table#grading th{
    color: #fff;
    border: 2px dashed #fff;
    border-radius: 10px;
-   box-shadow: 0 0 0 4px #000, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   box-shadow: 0 0 0 4px #e5d0b5, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
    font-weight: bold;
    border-collapse: separate;
   /* text-shadow: -1px -1px #aa3030;*/
@@ -632,8 +632,12 @@ table#grading, table#grading td, table#grading th{
     margin: 10px;
 }
 
+.standard td colspan {
+    border: none!important;
+}
+
 .standard td {
-	border: 1px dotted black;
+	border: 1px dotted #e5d0b5;
         padding: 5px;
 	text-align: center;
 /*        font-family: Arial, Verdana, Geneva, Helvetica, sens-serif;*/
@@ -794,91 +798,32 @@ div.menu ul.menu li.menuAdmin{
 	padding-top: .4em;
 	padding-bottom: .4em;
 }*/
-#otherMedia ol li a[href*="http://"] {
-    padding: 10px 0;
-    border-top: 2px solid #0972b4;
-    color: #0972b4;
-    text-shadow: none;
-}
-
-#otherMedia ol li a[href*="http://"]::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    padding: 10px 0;
-    max-width: 0;
-    border-bottom: 2px solid #fff;
-    color: #fff;
-    content: attr(data-hover);
-    -webkit-transition: max-width 0.5s;
-    -moz-transition: max-width 0.5s;
-    transition: max-width 0.5s;
-}
-
-#otherMedia ol li a[href*="http://"]:hover::before,
-#otherMedia ol li a[href*="http://"]:focus::before {
-    max-width: 100%;
-}
 
 
-
-/*
-#otherMedia ol li a[href*="http://"]{
-    padding: 10px 20px;
-}
-
-#otherMedia ol li a[href*="http://"]::before, #otherMedia a[href*="http://"]::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 3px solid #354856;
-    content: '';
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-#otherMedia ol li a[href*="http://"]::after {
-    border-color: #fff;
-    opacity: 0;
-    -webkit-transform: translateY(-7px) translateX(6px);
-    -moz-transform: translateY(-7px) translateX(6px);
-    transform: translateY(-7px) translateX(6px);
-}
-
-#otherMedia ol li a[href*="http://"]:hover::before, #otherMedia a[href*="http://"]:focus::before {
-    opacity: 0;
-    -webkit-transform: translateY(5px) translateX(-5px);
-    -moz-transform: translateY(5px) translateX(-5px);
-    transform: translateY(5px) translateX(-5px);
-}
-
-#otherMedia ol li a[href*="http://"]:hover::after,
-#otherMedia ol li a[href*="http://"]:focus::after  {
-    opacity: 1;
-    -webkit-transform: translateY(0px) translateX(0px);
-    -moz-transform: translateY(0px) translateX(0px);
-    transform: translateY(0px) translateX(0px);
-}
-*/
-#otherMedia ol li audio{
-/*	float: left; */
-/*	height: 48px; */
-	width: 50%;
-	padding-right: .2em;
-	margin-top: 0;
-}
-#otherMedia ol li img{
-    display:none;
+/* Effect 7: second border slides up */
+#otherMedia a[href*="http://"] {
+    text-decoration: overline underline;
+    text-transform: capitalize;
     
-/*    height: 1em;
-	float: left;
-	padding-right: .2em;
-	margin-top: 0;
-*/
+}
+
+#otherMedia a[href*="http://"]:visited {
+    text-decoration: line-through;
+    text-transform: capitalize;
+    
+}
+
+a[href*="http://"] {
+    text-indent: 3em;
+}
+
+
+a[href*="http://"]:before {
+    color: #000;
+}
+
+#otherMedia ol li img {
+    display:none;
 }
 
 .groupMembers li{
