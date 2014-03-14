@@ -1504,12 +1504,7 @@ nav#mainMenu{
     margin-left: 10px
     
 }
-nav#adminMenu{
-    position: static;
-    float: right;
-    margin-left: 10px
-    
-}
+
 aside#studentInfo >span#studentGrade {
 position: static;
 display: block;
@@ -1573,15 +1568,12 @@ position: static;
 border-radius: 5px;
 }
 
-
-
 nav#adminMenu {
 position: static;
 float: left;
-margin-left: 5px;
-margin-top: 80px;
-clear: left;
-display: inline;
+clear: both;
+margin-top: -6em;
+margin-left: 10px;
 }
 }
 
