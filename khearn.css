@@ -79,19 +79,12 @@ a.url:hover {
 }
 
 a:link {
-    text-shadow: 0px 2px 3px #2E2E2E;
     color: #2e0571;
+    text-shadow: -1px -1px 0 #000;  
 }
 a:visited {
-    text-shadow: 0px 2px 3px #2E2E2E;
     color: #150873;
-}
-a:active {
-    text-shadow: 0px 2px 3px #2E2E2E;
-}
-
-a:hover {
-    text-shadow: 0px 2px 3px #2E2E2E;
+    text-shadow: -1px -1px 0 #000;  
 }
 
 
@@ -633,7 +626,7 @@ table#grading, table#grading td, table#grading th{
 }
 
 .standard td colspan {
-    border: none!important;
+    border: none !important;
 }
 
 .standard td {
@@ -800,7 +793,7 @@ div.menu ul.menu li.menuAdmin{
 }*/
 
 
-/* Effect 7: second border slides up */
+
 #otherMedia a[href*="http://"] {
     text-decoration: overline underline;
     text-transform: capitalize;
